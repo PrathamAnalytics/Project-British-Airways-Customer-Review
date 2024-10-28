@@ -1,4 +1,4 @@
-# British Airways Review Project
+# British Airways Review Tableau Project
 
 ## Overview
 This Tableau project provides a visual analysis of key factors impacting British Airways' performance and customer experience. It includes dashboards focused on aircraft utilization, geographical reach, monthly trends, and an overall summary, offering insights to support informed decision-making.
