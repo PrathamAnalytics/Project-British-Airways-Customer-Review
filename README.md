@@ -1,5 +1,6 @@
 # Project Title: British Airways Review Analysis
-![Dashboard](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Dashboard.png?raw=true)
+![Project Image](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Image.png?raw=true)
+
 ## Background and Overview
 This project analyzes customer reviews for British Airways, aiming to understand customer sentiment, satisfaction factors, and areas needing improvement. By examining review data, we can uncover trends in customer feedback and provide insights that may help enhance the overall customer experience.
 ## Data Structure Overview
@@ -17,57 +18,52 @@ This analysis reveals critical insights into customer satisfaction with British 
    - **Business Metric:** Customer Satisfaction Score
    - **Interpretation:** While satisfaction is moderate, consistent improvement in specific areas could raise loyalty.
    - **Business Impact:** Addressing low-scoring aspects, such as comfort, could significantly improve customer perception.
-2. **Insight 2: Salary and Experience Correlation**   
-   - **Quantified Value:** Median salary increases by 20% with every 5 additional years of experience.
-   - **Business Metric:** Salary Growth Rate
-   - **Interpretation:** Experience strongly influences salary, guiding salary benchmarks.
-   - **Business Impact:** Competitive salary structures for experienced professionals can support retention.
+2. **Insight 2: In-flight Service**   
+   - **Quantified Value:** 60% of reviews mention service positively.
+   - **Business Metric:** Service Quality Rating
+   - **Interpretation:** Positive service experience stands out, showing strength in customer interaction.
+   - **Business Impact:** Leveraging strong service as a unique selling point may enhance brand reputation.
 
-3. **Insight 3: Tool Preference Trends**  
-   - **Quantified Value:** 55% of respondents prefer Python over other programming languages.
-   - **Business Metric:** Tool Preference Share
-   - **Interpretation:** Python's popularity highlights its versatility, making it a focus area for training.
-   - **Business Impact:** Emphasizing Python in educational programs can meet talent market demands.
+3. **Insight 3: Comfort and Amenities**  
+   - **Quantified Value:** Only 50% of reviews rate comfort above 3 stars.
+   - **Business Metric:** Comfort Index
+   - **Interpretation:** Comfort levels are a common concern, indicating a need for improvement.
+   - **Business Impact:** Investing in comfort enhancements could boost satisfaction scores.
 
-4. **Insight 4: Job Satisfaction Factors**  
-   - **Quantified Value:** 80% report highest job satisfaction when work-life balance and growth opportunities align.
-   - **Business Metric:** Satisfaction Index
-   - **Interpretation:** Flexible policies are linked to higher job satisfaction.
-   - **Business Impact:** Investing in work-life balance initiatives can enhance retention and morale.
-
+4. **Insight 4: Value for Money**  
+   - **Quantified Value:** 55% of reviewers find ticket prices fair given the service quality.
+   - **Business Metric:** Price-Value Perception
+   - **Interpretation:** Price perception aligns with service, but some feel it's overpriced.
+   - **Business Impact:** Offering more value-added services may justify pricing and enhance value perception.
 ## Data Limitations
-- **Sample Representativeness:** The survey sample may not fully represent all demographics in the data field.
-- **Self-Reported Data:** Responses could be subject to personal bias, particularly on salary and satisfaction.
-
+- **Sample Bias:** Reviews may disproportionately reflect extreme opinions (very positive or negative).
+- **Subjectivity:** Sentiment analysis may not fully capture nuanced customer opinions.
 ## Recommendations
-- **Expand SQL Training:** High SQL adoption suggests SQL resources can attract and upskill talent effectively.
-- **Benchmark Salaries by Experience:** Offer competitive salaries to retain skilled, experienced professionals.
-- **Focus on Python in Training Programs:** Python’s high demand suggests priority in training initiatives.
-- **Invest in Work-Life Balance Initiatives:** Supporting work-life balance can improve job satisfaction and retention.
-
+- **Enhance Comfort Levels:** Focus on improving in-flight amenities and seating to meet customer comfort expectations.
+- **Promote Strength in Service:** Highlight the positive service feedback in marketing efforts to attract new customers.
+- **Evaluate Pricing Structure:** Consider balancing prices with additional value to meet customer expectations.
 ---
 
 ## Technical Overview
 For those interested in replicating or expanding this analysis, here is a breakdown of the tools, methods, and data processing steps used:
 
 1. **Tools and Libraries Used**  
-   - **Power BI** for data visualization and dashboard creation.
-   - **Excel** for initial data cleaning and structuring.
-
+   - **Tableau** for visualizing sentiment trends and ratings.
+   - **Python (Pandas, NLTK)** for data preprocessing and sentiment analysis.
 2. **Methodology**
-   - **Data Cleaning:** Handled missing values and standardized responses to ensure consistency.
-   - **Data Aggregation:** Created summary metrics (e.g., average salary by experience level).
-   - **Visualization Techniques:** Used bar charts, line graphs, and scatter plots to display trends and correlations.
+   - **Data Cleaning:** Handled missing values and normalized review text.
+   - **Data Aggregation:** Aggregated average scores by category for analysis.
+   - **Sentiment Analysis:** Used NLP techniques to quantify positive and negative sentiment.
 
 3. **Key Analysis Steps**  
-   - **Skill Analysis:** Aggregated frequency counts for skills and tools to determine popularity.
-   - **Experience vs. Salary Correlation:** Used correlation analysis to explore the relationship between experience and salary.
-   - **Satisfaction Drivers:** Ran a multivariate analysis on factors contributing to job satisfaction.
+   - **Sentiment Analysis:** Extracted sentiment scores from review text to gauge overall mood.
+   - **Rating Breakdown:** Analyzed category-wise ratings (comfort, service, price).
+   - **Trend Analysis:** Assessed trends in ratings over time to spot any shifts in customer satisfaction.
 
 4. **Reproducibility Guide**
-   - **Accessing Data:** [Link to raw data file]  
-   - **Project Code:** Scripts and Power BI dashboards are provided in the repository for each key analysis.
-   - **Setup Instructions:** Ensure Power BI and Excel installations. Data transformations and visualizations can be recreated following the Power BI file structure provided.
+   - **Project Code:** Scripts and Tableau dashboards are in the repository for each key analysis.
+   - **Setup Instructions:** Ensure Python with Pandas and NLTK libraries and Tableau are set up to recreate analysis.
+
 
 ---
 
