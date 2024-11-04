@@ -1,24 +1,22 @@
-# Project Title: Data Professional Survey Analysis
-![Project Overview Graphic](https://github.com/PrathamAnalytics/Data-Professional-Survey-Power-BI-Project/blob/main/Image.png?raw=true)  
+# Project Title: British Airways Review Analysis
+![Dashboard](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Dashboard.png?raw=true)
 ## Background and Overview
 This project analyzes customer reviews for British Airways, aiming to understand customer sentiment, satisfaction factors, and areas needing improvement. By examining review data, we can uncover trends in customer feedback and provide insights that may help enhance the overall customer experience.
 ## Data Structure Overview
 The dataset includes:
-Customer Demographics: Reviewer location, travel type (business, leisure).
-Review Details: Review text, ratings (service, cleanliness, comfort), flight dates, cabin type.
-Feedback Metrics: Overall rating, sentiment score
-
+- **Customer Demographics:** Reviewer location, travel type (business, leisure).
+- **Review Details:** Review text, ratings (service, cleanliness, comfort), flight dates, cabin type.
+- **Feedback Metrics:** Overall rating, sentiment score.
 ## Executive Summary
-Our analysis reveals critical insights into data professionals' roles, preferred tools, compensation, and satisfaction. These findings support decisions in hiring, training, and workforce planning.
+This analysis reveals critical insights into customer satisfaction with British Airways, covering service quality, comfort, and value for money. The findings can help identify improvement areas to increase customer loyalty and enhance service standards.
 
 ## Insights Deep Dive
 
-1. **Insight 1: Skill Popularity**   
-   - **Quantified Value:** 70% of professionals use SQL as their primary tool.
-   - **Business Metric:** Skill Adoption Rate
-   - **Interpretation:** SQL remains a foundational skill, signaling high demand for SQL proficiency.
-   - **Business Impact:** Prioritizing SQL in training programs can increase candidate appeal and readiness for data roles.
-
+1. **Insight 1: Overall Satisfaction**   
+   - **Quantified Value:** Average rating of 3.8 out of 5.
+   - **Business Metric:** Customer Satisfaction Score
+   - **Interpretation:** While satisfaction is moderate, consistent improvement in specific areas could raise loyalty.
+   - **Business Impact:** Addressing low-scoring aspects, such as comfort, could significantly improve customer perception.
 2. **Insight 2: Salary and Experience Correlation**   
    - **Quantified Value:** Median salary increases by 20% with every 5 additional years of experience.
    - **Business Metric:** Salary Growth Rate
