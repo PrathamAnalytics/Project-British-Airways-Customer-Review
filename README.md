@@ -12,7 +12,7 @@ This project analyzes customer reviews for British Airways (BA) to assess passen
 This project leverages data from customer reviews of British Airways flights, combined with country information to analyze global perspectives on service quality. The dataset includes detailed reviews left by passengers on various aspects of their flight experience, such as comfort, food quality, and customer service. This data allows for a comprehensive exploration of factors that impact customer satisfaction, including flight route, traveler type, and regional feedback patterns.
 
 ### Data Sources
-1. **Customer Review Data (`ba_reviews.csv`)**  
+1. **Customer Review Data ([ba_reviews.csv](./ba_reviews.csv))**  
    This file contains the primary data on individual reviews, with information on:
    - **Review Details**: Text-based feedback summarizing the reviewer’s experience.
    - **Ratings**: Quantitative scores (1-5 scale) across categories such as seating comfort, in-flight entertainment, food and beverages, and ground service.
