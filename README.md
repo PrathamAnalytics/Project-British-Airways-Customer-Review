@@ -1,4 +1,4 @@
-# Project Title: British Airways Review Analysis
+# British Airways Review Analysis
 ![Project Image](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Image.png?raw=true)
 
 ## Background and Overview
