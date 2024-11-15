@@ -1,71 +1,117 @@
-# British Airways Review Analysis
-![Project Image](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Image.png?raw=true)
-
-## Background and Overview
-This project analyzes customer reviews for British Airways, aiming to understand customer sentiment, satisfaction factors, and areas needing improvement. By examining review data, we can uncover trends in customer feedback and provide insights that may help enhance the overall customer experience.
-## Data Structure Overview
-The dataset includes:
-- **Customer Demographics:** Reviewer location, travel type (business, leisure).
-- **Review Details:** Review text, ratings (service, cleanliness, comfort), flight dates, cabin type.
-- **Feedback Metrics:** Overall rating, sentiment score.
-## Executive Summary
-This analysis reveals critical insights into customer satisfaction with British Airways, covering service quality, comfort, and value for money. The findings can help identify improvement areas to increase customer loyalty and enhance service standards.
-
-## Insights Deep Dive
-
-1. **Insight 1: Overall Satisfaction**   
-   - **Quantified Value:** Average rating of 3.8 out of 5.
-   - **Business Metric:** Customer Satisfaction Score
-   - **Interpretation:** While satisfaction is moderate, consistent improvement in specific areas could raise loyalty.
-   - **Business Impact:** Addressing low-scoring aspects, such as comfort, could significantly improve customer perception.
-2. **Insight 2: In-flight Service**   
-   - **Quantified Value:** 60% of reviews mention service positively.
-   - **Business Metric:** Service Quality Rating
-   - **Interpretation:** Positive service experience stands out, showing strength in customer interaction.
-   - **Business Impact:** Leveraging strong service as a unique selling point may enhance brand reputation.
-
-3. **Insight 3: Comfort and Amenities**  
-   - **Quantified Value:** Only 50% of reviews rate comfort above 3 stars.
-   - **Business Metric:** Comfort Index
-   - **Interpretation:** Comfort levels are a common concern, indicating a need for improvement.
-   - **Business Impact:** Investing in comfort enhancements could boost satisfaction scores.
-
-4. **Insight 4: Value for Money**  
-   - **Quantified Value:** 55% of reviewers find ticket prices fair given the service quality.
-   - **Business Metric:** Price-Value Perception
-   - **Interpretation:** Price perception aligns with service, but some feel it's overpriced.
-   - **Business Impact:** Offering more value-added services may justify pricing and enhance value perception.
-## Data Limitations
-- **Sample Bias:** Reviews may disproportionately reflect extreme opinions (very positive or negative).
-- **Subjectivity:** Sentiment analysis may not fully capture nuanced customer opinions.
-## Recommendations
-- **Enhance Comfort Levels:** Focus on improving in-flight amenities and seating to meet customer comfort expectations.
-- **Promote Strength in Service:** Highlight the positive service feedback in marketing efforts to attract new customers.
-- **Evaluate Pricing Structure:** Consider balancing prices with additional value to meet customer expectations.
----
-
-## Technical Overview
-For those interested in replicating or expanding this analysis, here is a breakdown of the tools, methods, and data processing steps used:
-
-1. **Tools and Libraries Used**  
-   - **Tableau** for visualizing sentiment trends and ratings.
-   - **Python (Pandas, NLTK)** for data preprocessing and sentiment analysis.
-2. **Methodology**
-   - **Data Cleaning:** Handled missing values and normalized review text.
-   - **Data Aggregation:** Aggregated average scores by category for analysis.
-   - **Sentiment Analysis:** Used NLP techniques to quantify positive and negative sentiment.
-
-3. **Key Analysis Steps**  
-   - **Sentiment Analysis:** Extracted sentiment scores from review text to gauge overall mood.
-   - **Rating Breakdown:** Analyzed category-wise ratings (comfort, service, price).
-   - **Trend Analysis:** Assessed trends in ratings over time to spot any shifts in customer satisfaction.
-
-4. **Reproducibility Guide**
-   - **Project Code:** Scripts and Tableau dashboards are in the repository for each key analysis.
-   - **Setup Instructions:** Ensure Python with Pandas and NLTK libraries and Tableau are set up to recreate analysis.
-
+# British Airways Customer Review Analysis
 
 ---
 
+# Project Overview 
+This project analyzes customer reviews for British Airways (BA) to assess passenger satisfaction across various factors, including service quality, comfort, food, and entertainment. The project combines review text analysis with numerical rating insights to provide a data-driven overview of BA's customer experience.
 
+- **Data Sources:** BA review data, country data for geographic insights.
+- **Objectives:** Understand drivers of customer satisfaction and provide actionable insights for service improvement.
 
+---
+
+# Data Description 
+
+# British Airways Reviews Dataset
+- **Columns:** `Header`, `Author`, `Date`, `Place`, `Content`, `Aircraft`, `Traveller Type`, `Seat Type`, `Route`, `Date Flown`, `Recommended`, `Trip Verified`, `Rating`, `Seat Comfort`, `Cabin Staff Service`, `Food Beverages`, `Ground Service`, `Value for Money`, `Entertainment`
+- **Sample Size:** 5,000+ reviews spanning 10 countries.
+- **Metrics Captured:** Ratings on seat comfort, cabin staff service, food/beverages, ground service, value for money, and entertainment.
+
+```mermaid
+erDiagram
+    REVIEW {
+        int review_id PK
+        string header
+        string author
+        date date
+        string place
+        text content
+        string aircraft
+        string traveller_type
+        string seat_type
+        string route
+        date date_flown
+        boolean recommended
+        boolean trip_verified
+        int rating
+        int seat_comfort
+        int cabin_staff_service
+        int food_beverages
+        int ground_service
+        int value_for_money
+        int entertainment
+    }
+    COUNTRY {
+        string country_name PK
+        string country_code
+        string continent
+        string region
+    }
+    REVIEW ||--|{ COUNTRY: has_country
+```
+# Executive Summary 
+This analysis reveals that BA's overall satisfaction rating averages **2.5 out of 5**, with critical areas for improvement in food/beverages, entertainment, and ground service. The data shows that **90%** of reviews are negative for economy class, while business and first-class satisfaction rates are slightly better but below industry standards.
+
+# Top Insights
+**Economy Class Discontent:** **85%** of economy passengers rate food and comfort as poor.
+
+**Business Class Complaints:** **70%** indicate service issues.
+
+**Entertainment Lacks Appeal:** **80%** of reviewers rate entertainment poorly, citing outdated screens and limited options.
+
+# Key Insights 
+
+1. **Seat Comfort**
+Average rating across classes is **2.1/5**, with economy class rating at **1.8/5**.
+Key complaints include narrow seats and lack of legroom, particularly on **A320** aircraft.
+[]
+2. **Cabin Staff Service**
+Service in business class has an average rating of **3.0/5**, showing more positive feedback compared to economy **(2.0/5)**.
+Notable feedback includes inconsistent attentiveness and long wait times.
+
+3. **Food and Beverages**
+Ranked among the lowest categories with an average rating of **1.9/5**.
+Economy passengers describe food as "bland" and "limited in choice", while first-class passengers note better, but inconsistent quality.
+
+4. **Entertainment**
+Average rating of **1.7/5**, largely due to outdated or malfunctioning screens.
+
+**Suggestion for British Airways:** Invest in upgraded in-flight entertainment systems to boost satisfaction.
+
+# Technical Overview 
+**Languages Used:** Python (Data Analysis), SQL (Data Manipulation)
+
+**Tools:** Pandas, Matplotlib, Seaborn for data processing; Tableau for dashboard creation.
+
+**Models Used:** Sentiment analysis using Natural Language Processing (NLP) for review text.
+
+**Data Handling:** Merged BA Reviews dataset with Countries dataset for region-based analysis.
+
+# Data Limitations 
+**Sample Bias:** Predominantly negative reviews may skew data, overrepresenting dissatisfied customers.
+
+**Geographic Imbalance:** Most reviews are from UK and US passengers, which may not reflect global sentiments.
+
+**Limited Verification:** Only **60%** of reviews are verified, which could impact data reliability.
+
+# Recommendations 
+
+1. **Service Quality Improvement -**
+Increase staff training for better service consistency in economy and business classes.
+Target highly rated cabin crew for routes with lowest satisfaction to standardize experience.
+
+2. **Seat and Comfort Enhancements -**
+Consider investing in more comfortable seating, especially in economy class.
+Prioritize upgrades on long-haul flights, where comfort ratings are particularly low.
+
+3. **Culinary Upgrade -**
+Introduce regional food choices, especially on international routes.
+Explore partnerships with gourmet brands to elevate in-flight food options.
+
+4. **Enhanced In-Flight Entertainment -**
+Modernize entertainment systems by installing high-definition screens with updated libraries.
+Implement additional media and gaming options to cater to a wider audience.
+
+# Conclusion 
+
+In summary, BA's services have significant room for improvement, with immediate action recommended on economy seating comfort, food quality, and entertainment offerings. Addressing these factors could greatly enhance customer satisfaction and retain passenger loyalty.
