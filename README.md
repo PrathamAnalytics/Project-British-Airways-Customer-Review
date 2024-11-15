@@ -88,7 +88,7 @@ This analysis reveals that BA's overall satisfaction rating averages **2.5 out o
 Average rating across classes is **2.1/5**, with economy class rating at **1.8/5**.
 Key complaints include narrow seats and lack of legroom, particularly on **A320** aircraft.
 
-![Seat Comfort]()
+![Seat Comfort](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Seat%20Comfort.png?raw=true)
 2. **Cabin Staff Service**
 Service in business class has an average rating of **3.0/5**, showing more positive feedback compared to economy **(2.0/5)**.
 Notable feedback includes inconsistent attentiveness and long wait times.
