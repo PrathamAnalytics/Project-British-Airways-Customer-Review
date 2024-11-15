@@ -97,10 +97,10 @@ Notable feedback includes inconsistent attentiveness and long wait times.
 3. **Food and Beverages**
 Ranked among the lowest categories with an average rating of **1.9/5**.
 Economy passengers describe food as "bland" and "limited in choice", while first-class passengers note better, but inconsistent quality.
-()
+![Food and Beverages](https://github.com/PrathamAnalytics/British-Airways-Review-Tableau-Project/blob/main/Food.png?raw=true)
 4. **Entertainment**
 Average rating of **1.7/5**, largely due to outdated or malfunctioning screens.
-()
+![Entertainment]()
 **Suggestion for British Airways:** Invest in upgraded in-flight entertainment systems to boost satisfaction.
 
 # Technical Overview 
