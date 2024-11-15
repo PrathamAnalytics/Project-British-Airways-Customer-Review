@@ -12,14 +12,14 @@ This project analyzes customer reviews for British Airways (BA) to assess passen
 This project leverages data from customer reviews of British Airways flights, combined with country information to analyze global perspectives on service quality. The dataset includes detailed reviews left by passengers on various aspects of their flight experience, such as comfort, food quality, and customer service. This data allows for a comprehensive exploration of factors that impact customer satisfaction, including flight route, traveler type, and regional feedback patterns.
 
 ### Data Sources
-1. **Customer Review Data ([ba_reviews.csv](./ba_reviews.csv))**  
+1. **Customer Review Data [ba_reviews.csv](./ba_reviews.csv)**  
    This file contains the primary data on individual reviews, with information on:
    - **Review Details**: Text-based feedback summarizing the reviewer’s experience.
    - **Ratings**: Quantitative scores (1-5 scale) across categories such as seating comfort, in-flight entertainment, food and beverages, and ground service.
    - **Traveler Information**: Insights into traveler demographics and flight details, including traveler type (business, leisure) and seat class (economy, business).
    - **Flight Route & Aircraft Model**: Specific flight paths and the type of aircraft used, which help contextualize service quality in various scenarios.
 
-2. **Country Data (`Countries.csv`)**  
+2. **Country Data [Countries.csv](./Countries.csv)**  
    The country dataset enriches the analysis by linking reviews to geographical regions. This data enables segmentation of reviews based on the origin of the reviewer, facilitating an understanding of satisfaction trends by country or region. Key fields include:
    - **Country Name and Code**: Standardized country information to correlate with review origins.
    - **Continent and Region**: Classification to analyze regional trends, allowing for a breakdown of satisfaction across continents or specific regions.
