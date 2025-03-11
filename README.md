@@ -1,4 +1,4 @@
-# ***Project : British Airways Customer Review*** 
+# ***British Airways Customer Review*** 
 
 # ***Project Overview***
 This project analyzes customer reviews for British Airways (BA) to assess passenger satisfaction across various factors, including service quality, comfort, food, and entertainment. The project combines review text analysis with numerical rating insights to provide a data-driven overview of BA's customer experience.
